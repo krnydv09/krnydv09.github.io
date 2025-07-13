@@ -1,3 +1,9 @@
+// Redirect to Vercel portfolio
+window.addEventListener('load', function() {
+    // Redirect to the Vercel portfolio URL
+    window.location.href = 'https://portfolio-f8wvchlyt-krrnnvvrr-gmailcoms-projects.vercel.app/';
+});
+
 // Mobile menu toggle
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
