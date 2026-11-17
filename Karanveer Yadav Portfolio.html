@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karanveer Yadav — Compensation &amp; HR Analytics Portfolio</title>
+  <meta name="description" content="Editorial portfolio of Karanveer Yadav — Compensation Specialist at Genpact, B.Sc. Mathematics, specializing in Insurance Operations, Incentive Compensation Reconciliation, SAP Compensation, Callidus TrueComp, VPAS, and IBM Cognos." />
+  <meta property="og:title" content="Karanveer Yadav — Compensation & HR Analytics Portfolio" />
+  <meta property="og:description" content="Insurance operations agent payout reconciliation across Wholesaler, Broker-Dealer, and General Agency channels." />
+  <meta property="og:type" content="website" />
+
+  <!-- Custom KY SVG Favicon using Major Mono Display -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23F7F4EB' stroke='%23161615' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='24' fill='%23161615'%3EKY%3C/text%3E%3C/svg%3E" />
+
+  <!-- Editorial & Monogram Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Major+Mono+Display&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            paper: {
+              light: '#F7F4EB',
+              cardLight: '#EFECE2',
+              dark: '#161615',
+              cardDark: '#1F1F1D'
+            },
+            ink: {
+              light: '#161615',
+              mutedLight: '#52504B',
+              dark: '#EAE6DF',
+              mutedDark: '#A39E93'
+            },
+            rule: {
+              light: '#C8C3B6',
+              dark: '#33322E'
+            }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            serif: ['"Newsreader"', 'Georgia', 'serif'],
+            mono: ['"Courier Prime"', 'monospace'],
+            monogram: ['"Major Mono Display"', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Warm Editorial Newsprint Base with Subtle Fiber Grain */
+    body {
+      background-color: #F7F4EB;
+      color: #161615;
+      font-family: 'Newsreader', Georgia, serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
+      background-image: radial-gradient(rgba(22, 22, 21, 0.035) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+    html.dark body {
+      background-color: #161615;
+      color: #EAE6DF;
+      background-image: radial-gradient(rgba(234, 230, 223, 0.03) 1px, transparent 0);
+    }
+
+    /* Classic Broadsheet Double-Rule Divider */
+    .double-rule {
+      border-top: 2px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      height: 5px;
+    }
+
+    /* Native Range Sliders Matching Editorial Ink */
+    input[type="range"] {
+      accent-color: #161615;
+    }
+    html.dark input[type="range"] {
+      accent-color: #EAE6DF;
+    }
+
+    /* Clean Single-Page Ink-on-White Print Resume Layout */
+    @media print {
+      @page {
+        margin: 12mm;
+        size: A4 portrait;
+      }
+      body, html.dark body {
+        background: #FFFFFF !important;
+        color: #111111 !important;
+        background-image: none !important;
+        font-size: 10.5pt !important;
+      }
+      .no-print, #admin-app {
+        display: none !important;
+      }
+      #portfolio-app {
+        display: block !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      section {
+        padding-top: 10pt !important;
+        padding-bottom: 10pt !important;
+        break-inside: avoid;
+      }
+      .print-card {
+        background: #FFFFFF !important;
+        border: 1px solid #CCCCCC !important;
+        color: #111111 !important;
+      }
+    }
+
+    /* ---- Interactive layer ---- */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .project-card { transition: transform .2s ease, box-shadow .2s ease, outline-color .2s ease; outline: 2px solid transparent; outline-offset: 3px; }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px -12px rgba(0,0,0,.35); }
+    .project-card.pulse { outline-color: #d97706; }
+    .nav-active { text-decoration: underline; font-weight: 700; }
+    #skills li.skill-chip { cursor: pointer; padding: 2px 6px; margin-left: -6px; transition: background-color .15s ease; }
+    #skills li.skill-chip:hover { background: rgba(217,119,6,.18); }
+    .rbar { transition: height .3s ease, background-color .2s ease; }
+    #gauge-marker, #seg-base, #seg-merit, #seg-bonus { transition: left .25s ease, width .25s ease; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .project-card, .rbar, #gauge-marker, #seg-base, #seg-merit, #seg-bonus { transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media print { .reveal { opacity: 1 !important; transform: none !important; } }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#161615] selection:text-[#F7F4EB] dark:selection:bg-[#EAE6DF] dark:selection:text-[#161615]">
+
+  <!-- ===================================================================== -->
+  <!-- TOP CORNER UTILITY BAR                                                -->
+  <!-- ===================================================================== -->
+  <div id="scroll-progress" class="no-print fixed top-0 left-0 h-[3px] z-50 bg-amber-600" style="width:0"></div>
+  <button id="back-to-top" type="button" aria-label="Back to top" class="no-print hidden fixed bottom-5 left-5 z-40 border border-ink-light dark:border-ink-dark bg-paper-light dark:bg-paper-dark font-mono text-xs px-3 py-2 hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark">&uarr; Top</button>
+
+  <div class="no-print border-b border-rule-light dark:border-rule-dark bg-paper-cardLight/75 dark:bg-paper-cardDark/75 backdrop-blur-sm sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 py-2 flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] uppercase tracking-wider">
+      <div class="flex items-center gap-3 text-ink-mutedLight dark:text-ink-mutedDark">
+        <span>Delhi, IN</span>
+        <span>&bull;</span>
+        <span>Edition 2026</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <!-- Switch between Portfolio and Credential-Gated Admin Vault (Minimalist Icon) -->
+        <button id="toggle-view-btn" type="button" title="Admin Vault" aria-label="Admin Vault" class="relative border border-ink-light dark:border-ink-dark p-1.5 hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors flex items-center justify-center">
+          <span id="vault-indicator" class="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+          <svg id="vault-icon" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span id="toggle-view-label" class="sr-only">Admin Vault</span>
+        </button>
+
+        <!-- Morning / Evening Edition Theme Switcher (Minimalist Icon) -->
+        <button id="theme-toggle" type="button" title="Evening Edition" aria-label="Switch to Evening Edition" class="border border-ink-light dark:border-ink-dark p-1.5 hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors flex items-center justify-center">
+          <svg id="theme-icon" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span id="theme-label" class="sr-only">Evening Edition</span>
+        </button>
+
+        <!-- Print / Save A4 PDF Resume (Minimalist Icon) -->
+        <button id="print-resume-btn" type="button" onclick="window.print()" title="Print / Save PDF" aria-label="Print / Save PDF" class="bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark border border-ink-light dark:border-ink-dark p-1.5 hover:opacity-85 transition-opacity flex items-center justify-center">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span class="sr-only">Print / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 1: PUBLIC EDITORIAL PORTFOLIO                                    -->
+  <!-- ===================================================================== -->
+  <main id="portfolio-app" class="max-w-5xl mx-auto px-4 sm:px-8 pt-6 pb-20">
+
+    <!-- HEADER & PRIMARY NAVIGATION -->
+    <header class="mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-ink-mutedLight dark:text-ink-mutedDark mb-1">
+            Insurance Operations &bull; Incentive Compensation Reconciliation &bull; SLA Governance
+          </p>
+          <h1 class="font-display text-4xl sm:text-5xl font-extrabold tracking-tight leading-none">
+            Karanveer Yadav
+          </h1>
+        </div>
+
+        <nav aria-label="Primary Navigation" class="no-print flex flex-wrap gap-x-5 gap-y-2 font-mono text-xs uppercase tracking-wider">
+          <a href="#work" class="hover:underline underline-offset-4">Selected Work</a>
+          <a href="#simulator" class="hover:underline underline-offset-4">Merit Sandbox</a>
+          <a href="#experience" class="hover:underline underline-offset-4">Experience</a>
+          <a href="#skills" class="hover:underline underline-offset-4">Skills</a>
+          <a href="#contact" class="hover:underline underline-offset-4 font-bold">Contact</a>
+        </nav>
+      </div>
+      <div class="double-rule"></div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pb-10 border-b border-rule-light dark:border-rule-dark">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-9">
+          <h2 class="font-display text-2xl sm:text-3xl font-bold leading-snug mb-4">
+            Reconciling multi-channel insurance agent compensation and tracing root-cause discrepancies at enterprise scale.
+          </h2>
+          <p class="text-lg leading-relaxed text-ink-light/90 dark:text-ink-dark/90 mb-6">
+            Compensation Specialist at <strong>Genpact</strong> in Delhi, India, with 2+ years of experience and a <strong>B.Sc. in Mathematics</strong> from Deendayal Upadhyaya Gorakhpur University. I reconcile agent compensation payouts across Wholesaler, Broker-Dealer, and General Agency (GA) distribution channels using <strong>SAP Compensation</strong>, <strong>Callidus TrueComp</strong>, <strong>VPAS</strong>, and legacy platforms—sustaining 95%+ resolution accuracy across monthly exception caseloads.
+          </p>
+
+          <!-- Key Outcomes Strip -->
+          <div class="grid grid-cols-3 gap-4 border-t border-b border-rule-light dark:border-rule-dark py-4">
+            <div>
+              <div class="count-up font-display text-2xl sm:text-3xl font-bold">95%+</div>
+              <div class="font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark">Resolution Accuracy</div>
+            </div>
+            <div class="border-l border-rule-light dark:border-rule-dark pl-4">
+              <div class="count-up font-display text-2xl sm:text-3xl font-bold">50 / Mo</div>
+              <div class="font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark">Exception Caseload</div>
+            </div>
+            <div class="border-l border-rule-light dark:border-rule-dark pl-4">
+              <div class="count-up font-display text-2xl sm:text-3xl font-bold">3 Channels</div>
+              <div class="font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark">Wholesaler &bull; BD &bull; GA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom KY Monogram Seal (Major Mono Display) & Direct Dossier -->
+        <aside class="md:col-span-3 flex flex-col items-center md:items-end justify-between gap-4">
+          <div class="w-28 h-28 rounded-full border-2 border-ink-light dark:border-ink-dark p-1.5 flex items-center justify-center">
+            <div class="w-full h-full rounded-full border border-ink-light dark:border-ink-dark flex flex-col items-center justify-center bg-paper-cardLight dark:bg-paper-cardDark">
+              <span class="font-monogram text-3xl tracking-tighter leading-none">KY</span>
+              <span class="font-mono text-[9px] uppercase tracking-widest mt-1 text-ink-mutedLight dark:text-ink-mutedDark">DEL &bull; IN</span>
+            </div>
+          </div>
+
+          <div class="w-full border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-3.5 font-mono text-xs space-y-1.5 print-card">
+            <div class="uppercase tracking-wider font-bold border-b border-rule-light dark:border-rule-dark pb-1">Direct Channels</div>
+            <div class="truncate">krrnnvvrr@gmail.com</div>
+            <div>+91 99363 58988</div>
+            <div>
+              <a href="https://linkedin.com/in/krrnnvvrr" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-75">linkedin.com/in/krrnnvvrr &nearr;</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK & CASE STUDIES -->
+    <section id="work" class="py-10 border-b border-rule-light dark:border-rule-dark">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
+        <div>
+          <span class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">01 // Case Studies &amp; Artifacts</span>
+          <h2 class="font-display text-3xl font-bold mt-1">Selected Work</h2>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="no-print flex flex-wrap gap-2 font-mono text-xs">
+          <button type="button" data-filter="all" class="filter-btn bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark border border-ink-light dark:border-ink-dark px-3 py-1">All (03)</button>
+          <button type="button" data-filter="icm" class="filter-btn border border-rule-light dark:border-rule-dark px-3 py-1 hover:border-ink-light dark:hover:border-ink-dark">ICM &amp; Payroll</button>
+          <button type="button" data-filter="bi" class="filter-btn border border-rule-light dark:border-rule-dark px-3 py-1 hover:border-ink-light dark:hover:border-ink-dark">Power BI &amp; Equity</button>
+          <button type="button" data-filter="sql" class="filter-btn border border-rule-light dark:border-rule-dark px-3 py-1 hover:border-ink-light dark:hover:border-ink-dark">SQL Governance</button>
+        </div>
+      </div>
+
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article data-category="icm" class="project-card border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-5 flex flex-col justify-between print-card">
+          <div>
+            <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">
+              <span>Enterprise ICM</span>
+              <span>Xactly &bull; SQL</span>
+            </div>
+            <h3 class="font-display text-xl font-bold leading-snug mb-2">
+              Multi-Tier Sales Quota &amp; Accelerator Engine
+            </h3>
+            <p class="text-sm leading-relaxed text-ink-light/85 dark:text-ink-dark/85 mb-4">
+              Architected automated attainment tiering, clawback logic, and split-credit commission tables across 1,400+ global sales representatives with zero payout disputes.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase mb-4">
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">Xactly Incent</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">SAP Commissions</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">SQL</span>
+            </div>
+            <button type="button" data-project="0" class="open-modal-btn no-print w-full border border-ink-light dark:border-ink-dark py-2 font-mono text-xs uppercase tracking-wider hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors">
+              Inspect Architecture &amp; SQL &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article data-category="bi" class="project-card border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-5 flex flex-col justify-between print-card">
+          <div>
+            <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">
+              <span>Workforce Analytics</span>
+              <span>Power BI &bull; DAX</span>
+            </div>
+            <h3 class="font-display text-xl font-bold leading-snug mb-2">
+              Compa-Ratio &amp; Pay-Equity Executive Suite
+            </h3>
+            <p class="text-sm leading-relaxed text-ink-light/85 dark:text-ink-dark/85 mb-4">
+              Built interactive salary band penetration, range-spread, and merit budget allocation dashboards linking SAP SuccessFactors HRIS feeds to executive review boards.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase mb-4">
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">Power BI</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">DAX</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">SuccessFactors</span>
+            </div>
+            <button type="button" data-project="1" class="open-modal-btn no-print w-full border border-ink-light dark:border-ink-dark py-2 font-mono text-xs uppercase tracking-wider hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors">
+              Inspect Architecture &amp; DAX &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article data-category="sql" class="project-card border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-5 flex flex-col justify-between print-card">
+          <div>
+            <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">
+              <span>Audit Automation</span>
+              <span>SQL &bull; Cognos</span>
+            </div>
+            <h3 class="font-display text-xl font-bold leading-snug mb-2">
+              Pre-Payroll Variance &amp; Anomaly Sentinel
+            </h3>
+            <p class="text-sm leading-relaxed text-ink-light/85 dark:text-ink-dark/85 mb-4">
+              Replaced manual spreadsheet checks with automated SQL window-function audits flagging duplicate stipends, pro-rata errors, and out-of-band adjustments prior to lock.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-1.5 font-mono text-[10px] uppercase mb-4">
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">PostgreSQL</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">IBM Cognos</span>
+              <span class="border border-rule-light dark:border-rule-dark px-2 py-0.5">Excel VBA</span>
+            </div>
+            <button type="button" data-project="2" class="open-modal-btn no-print w-full border border-ink-light dark:border-ink-dark py-2 font-mono text-xs uppercase tracking-wider hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors">
+              Inspect Architecture &amp; SQL &rarr;
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE MERIT MATRIX & VARIABLE BONUS SIMULATOR -->
+    <section id="simulator" class="no-print py-10 border-b border-rule-light dark:border-rule-dark">
+      <div class="mb-6">
+        <span class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">02 // Interactive Compensation Sandbox</span>
+        <h2 class="font-display text-3xl font-bold mt-1">Merit Matrix &amp; Variable Bonus Simulator</h2>
+        <p class="text-sm text-ink-mutedLight dark:text-ink-mutedDark mt-1">
+          Test compa-ratio matrix governance rules in real time—adjusting merit increases based on band position and performance rating.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-6">
+        <!-- Sliders -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="flex flex-wrap items-center gap-2 font-mono text-[11px]">
+            <span class="uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark">Try a case:</span>
+            <button type="button" class="preset-btn border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark" data-preset='{"s":700000,"c":0.88,"r":3,"p":5}'>Early career</button>
+            <button type="button" class="preset-btn border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark" data-preset='{"s":1800000,"c":0.89,"r":5,"p":7}'>Star, underpaid</button>
+            <button type="button" class="preset-btn border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark" data-preset='{"s":3200000,"c":1.18,"r":3,"p":6}'>Average, overpaid</button>
+            <button type="button" class="preset-btn border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark" data-preset='{"s":1500000,"c":1.0,"r":1,"p":6}'>Low performer</button>
+          </div>
+          <div>
+            <div class="flex justify-between font-mono text-xs mb-1">
+              <span>Current Base Salary (INR)</span>
+              <strong id="sim-salary-val">&#8377;12,00,000</strong>
+            </div>
+            <input type="range" id="sim-salary" min="500000" max="4000000" step="50000" value="1200000" class="w-full" />
+          </div>
+
+          <div>
+            <div class="flex justify-between font-mono text-xs mb-1">
+              <span>Compa-Ratio (Salary &divide; Band Midpoint)</span>
+              <strong id="sim-compa-val">0.92 (Below Midpoint)</strong>
+            </div>
+            <input type="range" id="sim-compa" min="0.75" max="1.25" step="0.01" value="0.92" class="w-full" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <div class="flex justify-between font-mono text-xs mb-1">
+                <span>Performance Rating (1–5)</span>
+                <strong id="sim-rating-val">4 — Exceeds</strong>
+              </div>
+              <input type="range" id="sim-rating" min="1" max="5" step="1" value="4" class="w-full" />
+            </div>
+
+            <div>
+              <div class="flex justify-between font-mono text-xs mb-1">
+                <span>Department Merit Pool (%)</span>
+                <strong id="sim-pool-val">6.0%</strong>
+              </div>
+              <input type="range" id="sim-pool" min="2" max="12" step="0.5" value="6.0" class="w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Calculation Output -->
+        <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-rule-light dark:border-rule-dark pt-5 lg:pt-0 lg:pl-6 flex flex-col justify-between font-mono">
+          <div class="space-y-3 text-xs">
+            <div class="flex justify-between border-b border-rule-light dark:border-rule-dark pb-2">
+              <span class="text-ink-mutedLight dark:text-ink-mutedDark">Matrix Merit %:</span>
+              <strong id="out-merit-pct" class="text-sm">7.80%</strong>
+            </div>
+            <div class="flex justify-between border-b border-rule-light dark:border-rule-dark pb-2">
+              <span class="text-ink-mutedLight dark:text-ink-mutedDark">Annual Merit Increment:</span>
+              <strong id="out-merit-amt">&#8377;93,600</strong>
+            </div>
+            <div class="flex justify-between border-b border-rule-light dark:border-rule-dark pb-2">
+              <span class="text-ink-mutedLight dark:text-ink-mutedDark">Variable Performance Bonus:</span>
+              <strong id="out-bonus-amt">&#8377;1,44,000</strong>
+            </div>
+            <div class="flex justify-between pt-1 text-sm">
+              <span class="font-bold">Projected Total Cash:</span>
+              <strong id="out-total-cash">&#8377;14,37,600</strong>
+            </div>
+          </div>
+
+          <div class="mt-4 space-y-4">
+            <div>
+              <div class="flex justify-between text-[10px] uppercase text-ink-mutedLight dark:text-ink-mutedDark mb-1"><span>Band position</span><span id="gauge-text"></span></div>
+              <div class="relative h-3 border border-rule-light dark:border-rule-dark">
+                <div class="absolute inset-y-0 left-0 bg-amber-600/30" style="width:40%"></div>
+                <div class="absolute inset-y-0 bg-red-700/25" style="left:70%;right:0"></div>
+                <div id="gauge-marker" class="absolute -top-1 h-5 w-1 bg-ink-light dark:bg-ink-dark" style="left:40%"></div>
+              </div>
+              <div class="flex justify-between text-[9px] mt-1 text-ink-mutedLight dark:text-ink-mutedDark"><span>0.75</span><span>accelerator &lt;0.95</span><span>damper &gt;1.10</span><span>1.25</span></div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase text-ink-mutedLight dark:text-ink-mutedDark mb-1">Where the total cash comes from</div>
+              <div class="flex h-3 border border-rule-light dark:border-rule-dark overflow-hidden">
+                <span id="seg-base" class="bg-ink-light/40 dark:bg-ink-dark/40" style="width:80%"></span>
+                <span id="seg-merit" class="bg-amber-600" style="width:10%"></span>
+                <span id="seg-bonus" class="bg-ink-light dark:bg-ink-dark" style="width:10%"></span>
+              </div>
+              <div class="flex gap-3 text-[9px] mt-1 text-ink-mutedLight dark:text-ink-mutedDark"><span>&#9632; Base</span><span class="text-amber-600">&#9632; Merit</span><span>&#9632; Bonus</span></div>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase text-ink-mutedLight dark:text-ink-mutedDark mb-1">Merit % at each rating (tap a bar to set rating)</div>
+              <div id="rating-bars" class="flex items-end gap-2 h-16"></div>
+            </div>
+          </div>
+
+          <div id="out-governance-note" class="mt-4 p-2.5 border border-rule-light dark:border-rule-dark bg-paper-light dark:bg-paper-dark text-[11px] leading-relaxed">
+            Governance Rule: High performer below midpoint (CR &lt; 0.95) receives a 1.15x band-progression accelerator.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="py-10 border-b border-rule-light dark:border-rule-dark">
+      <div class="mb-6">
+        <span class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">03 // Career Ledger &amp; Credentials</span>
+        <h2 class="font-display text-3xl font-bold mt-1">Experience &amp; Education</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Work History -->
+        <div class="md:col-span-7 space-y-6">
+          <div class="border-l-2 border-ink-light dark:border-ink-dark pl-4">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+              <h3 class="font-display text-xl font-bold">Compensation Specialist</h3>
+              <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">August 2024 &ndash; Present</span>
+            </div>
+            <div class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">
+              Genpact India &bull; Delhi, India
+            </div>
+            <ul class="list-disc list-inside text-sm space-y-1.5 leading-relaxed">
+              <li>Sustained 95%+ resolution accuracy across up to 50 monthly agent compensation exception cases, reconciling payouts against policy premium data across Wholesaler, Broker-Dealer, and GA channels using SAP Compensation, Callidus TrueComp, VPAS, and legacy systems.</li>
+              <li>Investigated flagged compensation exceptions end-to-end—tracing incorrect premium inputs, policy mismatches, and agent hierarchy errors to source and applying pre-payout corrections.</li>
+              <li>Partnered with New Business and systems teams to escalate upstream data errors, maintained Salesforce audit trails, and built IBM Cognos and Advanced Excel SLA dashboards.</li>
+            </ul>
+          </div>
+
+          <div class="border-l-2 border-rule-light dark:border-rule-dark pl-4">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+              <h3 class="font-display text-xl font-bold">Customer Support Associate</h3>
+              <span class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">March 2024 &ndash; July 2024</span>
+            </div>
+            <div class="font-mono text-xs uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">
+              Tech Mahindra India &bull; Delhi, India
+            </div>
+            <ul class="list-disc list-inside text-sm space-y-1.5 leading-relaxed">
+              <li>Resolved inbound billing, account, and service queries within defined SLA timelines while maintaining accurate CRM case logs for quality audits.</li>
+              <li>Applied structured root-cause troubleshooting to recurring complaint patterns and escalated complex issues to technical and back-office teams through to closure.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="md:col-span-5 space-y-5">
+          <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-4 print-card">
+            <div class="font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark">Academic Degree</div>
+            <h3 class="font-display text-lg font-bold mt-1">B.Sc. in Mathematics</h3>
+            <p class="text-sm mt-0.5">Deendayal Upadhyay Gorakhpur University</p>
+            <p class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark mt-1">July 2018 &ndash; June 2022 &bull; Gorakhpur, Uttar Pradesh</p>
+          </div>
+
+          <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-4 print-card">
+            <div class="font-mono text-[11px] uppercase tracking-wider text-ink-mutedLight dark:text-ink-mutedDark mb-2">Licenses &amp; Certifications</div>
+            <ul class="space-y-2.5 text-sm">
+              <li class="border-b border-rule-light dark:border-rule-dark pb-2">
+                <div class="flex justify-between items-baseline">
+                  <span class="font-bold">AI Skills Passport</span>
+                  <span class="font-mono text-xs">EY &bull; Oct 2026</span>
+                </div>
+                <div class="font-mono text-[10px] text-ink-mutedLight dark:text-ink-mutedDark mt-0.5">ID: 44e3e40ec131484c993a7f0bf0dce9e0</div>
+              </li>
+              <li class="border-b border-rule-light dark:border-rule-dark pb-2">
+                <div class="flex justify-between items-baseline">
+                  <span class="font-bold">McKinsey Forward Programme</span>
+                  <span class="font-mono text-xs">McKinsey &bull; Jun 2026</span>
+                </div>
+                <div class="font-mono text-[10px] text-ink-mutedLight dark:text-ink-mutedDark mt-0.5">Problem Solving &bull; Interpersonal Communication</div>
+              </li>
+              <li>
+                <div class="flex justify-between items-baseline">
+                  <span class="font-bold">Data Science &amp; Analytics</span>
+                  <span class="font-mono text-xs">HP LIFE &bull; Mar 2024</span>
+                </div>
+                <div class="font-mono text-[10px] text-ink-mutedLight dark:text-ink-mutedDark mt-0.5">ID: b777ab7f-208a-4626-881b-f3009da8f702</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="skills" class="py-10 border-b border-rule-light dark:border-rule-dark">
+      <div class="mb-6">
+        <span class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">04 // Technical Stack</span>
+        <h2 class="font-display text-3xl font-bold mt-1">Core Platforms &amp; Analytics</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="border border-rule-light dark:border-rule-dark p-4 print-card">
+          <h3 class="font-mono text-xs uppercase tracking-wider font-bold border-b border-rule-light dark:border-rule-dark pb-2 mb-3">
+            Compensation &amp; Core Systems
+          </h3>
+          <ul class="space-y-1.5 text-sm">
+            <li>&bull; SAP Compensation</li>
+            <li>&bull; Callidus TrueComp (SAP Commissions)</li>
+            <li>&bull; VPAS &amp; Legacy Platforms</li>
+            <li>&bull; Salesforce (Case &amp; CRM Management)</li>
+          </ul>
+        </div>
+
+        <div class="border border-rule-light dark:border-rule-dark p-4 print-card">
+          <h3 class="font-mono text-xs uppercase tracking-wider font-bold border-b border-rule-light dark:border-rule-dark pb-2 mb-3">
+            Reporting &amp; Data Validation
+          </h3>
+          <ul class="space-y-1.5 text-sm">
+            <li>&bull; IBM Cognos Reporting</li>
+            <li>&bull; Advanced Excel (Macros &amp; Dashboards)</li>
+            <li>&bull; SQL &amp; Financial Data Validation</li>
+            <li>&bull; Premium &amp; Commission Analysis</li>
+          </ul>
+        </div>
+
+        <div class="border border-rule-light dark:border-rule-dark p-4 print-card">
+          <h3 class="font-mono text-xs uppercase tracking-wider font-bold border-b border-rule-light dark:border-rule-dark pb-2 mb-3">
+            Insurance Channel Governance
+          </h3>
+          <ul class="space-y-1.5 text-sm">
+            <li>&bull; Wholesaler, Broker-Dealer &amp; GA Channels</li>
+            <li>&bull; Discrepancy Root Cause Analysis</li>
+            <li>&bull; New Business Data Review</li>
+            <li>&bull; SLA Governance &amp; Audit Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENCRYPTED CORRESPONDENCE CONTACT FORM -->
+    <section id="contact" class="no-print pt-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-5">
+          <span class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">05 // Encrypted Dispatch</span>
+          <h2 class="font-display text-3xl font-bold mt-1 mb-3">Send a Direct Message</h2>
+          <p class="text-sm leading-relaxed text-ink-mutedLight dark:text-ink-mutedDark mb-5">
+            Reach out regarding Compensation &amp; Benefits leadership, ICM architecture, or HR analytics roles. Every message is encrypted client-side via <strong>AES-256-GCM</strong> before storage.
+          </p>
+
+          <div class="space-y-2 font-mono text-xs">
+            <button id="copy-email-btn" type="button" class="w-full text-left border border-rule-light dark:border-rule-dark px-3 py-2 hover:border-ink-light dark:hover:border-ink-dark flex justify-between items-center">
+              <span>krrnnvvrr@gmail.com</span>
+              <span class="underline">Copy</span>
+            </button>
+            <button id="copy-phone-btn" type="button" class="w-full text-left border border-rule-light dark:border-rule-dark px-3 py-2 hover:border-ink-light dark:hover:border-ink-dark flex justify-between items-center">
+              <span>+91 99363 58988</span>
+              <span class="underline">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <form id="contact-form" class="md:col-span-7 border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-6 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="sender-name" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Full Name</label>
+              <input type="text" id="sender-name" required placeholder="John Miller" class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2 text-sm focus:outline-none focus:border-ink-light dark:focus:border-ink-dark" />
+            </div>
+            <div>
+              <label for="sender-email" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Work Email</label>
+              <input type="email" id="sender-email" required placeholder="john.miller@enterprise.com" class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2 text-sm focus:outline-none focus:border-ink-light dark:focus:border-ink-dark" />
+            </div>
+          </div>
+
+          <div>
+            <label for="sender-subject" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Subject</label>
+            <input type="text" id="sender-subject" required placeholder="Compensation Analytics Opportunity — Global HRIS Team" class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2 text-sm focus:outline-none focus:border-ink-light dark:focus:border-ink-dark" />
+          </div>
+
+          <div>
+            <label for="sender-message" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Message</label>
+            <textarea id="sender-message" rows="4" required placeholder="Hi Karanveer, we reviewed your Xactly ICM and SQL payroll audit case studies and would like to schedule an introductory conversation..." class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2 text-sm focus:outline-none focus:border-ink-light dark:focus:border-ink-dark"></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+            <span class="font-mono text-[11px] text-ink-mutedLight dark:text-ink-mutedDark">
+              Protected by Web Crypto AES-256-GCM
+            </span>
+            <button type="submit" class="bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark font-mono text-xs uppercase tracking-widest px-6 py-2.5 font-bold hover:opacity-85 transition-opacity">
+              Encrypt &amp; Send Dispatch
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-14 pt-6 border-t border-rule-light dark:border-rule-dark flex flex-col sm:flex-row justify-between items-center gap-2 font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">
+      <span>&copy; 2026 Karanveer Yadav &bull; Delhi, India</span>
+      <span>Languages: English (Professional) &bull; Hindi (Native)</span>
+    </footer>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 2: CREDENTIAL-GATED ADMIN & CORRESPONDENCE VAULT                 -->
+  <!-- ===================================================================== -->
+  <section id="admin-app" class="hidden max-w-5xl mx-auto px-4 sm:px-8 pt-6 pb-20">
+    <!-- Vault Header -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b-2 border-ink-light dark:border-ink-dark pb-4 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full border border-ink-light dark:border-ink-dark flex items-center justify-center font-monogram text-base bg-paper-cardLight dark:bg-paper-cardDark">
+          KY
+        </div>
+        <div>
+          <h1 class="font-display text-2xl sm:text-3xl font-bold tracking-tight">Correspondence &amp; Admin Vault</h1>
+          <p class="font-mono text-[11px] uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark">
+            AES-256-GCM Encrypted Store &bull; MongoDB Atlas Adapter Ready
+          </p>
+        </div>
+      </div>
+
+      <button id="back-to-portfolio-btn" type="button" class="font-mono text-xs uppercase tracking-wider border border-ink-light dark:border-ink-dark px-3.5 py-2 hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark transition-colors">
+        &larr; Back to Portfolio
+      </button>
+    </div>
+
+    <!-- LOGIN GATE -->
+    <div id="vault-login-gate" class="max-w-md mx-auto border border-ink-light dark:border-ink-dark bg-paper-cardLight dark:bg-paper-cardDark p-6 sm:p-8 my-8">
+      <div class="font-mono text-[11px] uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark mb-1">
+        Restricted Executive Access
+      </div>
+      <h2 class="font-display text-2xl font-bold mb-3">Unlock Encrypted Inbox</h2>
+      <p class="text-sm text-ink-mutedLight dark:text-ink-mutedDark mb-6 leading-relaxed">
+        Authenticate with your Admin ID and decryption passphrase to derive the 256-bit AES key and read incoming portfolio correspondence.
+      </p>
+
+      <form id="vault-login-form" class="space-y-4">
+        <div>
+          <label for="vault-id-input" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Admin ID</label>
+          <input type="text" id="vault-id-input" required placeholder="Admin ID" class="w-full bg-paper-light dark:bg-paper-dark border border-ink-light dark:border-ink-dark px-3 py-2 font-mono text-sm focus:outline-none" />
+        </div>
+        <div>
+          <label for="vault-pass-input" class="block font-mono text-[11px] uppercase tracking-wider mb-1">Vault Passphrase</label>
+          <input type="password" id="vault-pass-input" required placeholder="••••••••••••••" class="w-full bg-paper-light dark:bg-paper-dark border border-ink-light dark:border-ink-dark px-3 py-2 font-mono text-sm focus:outline-none" />
+        </div>
+        <p id="vault-login-error" class="hidden font-mono text-xs text-red-700 dark:text-red-400"></p>
+        <button type="submit" class="w-full bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark font-mono text-xs uppercase tracking-widest py-3 font-bold hover:opacity-85 transition-opacity">
+          Authenticate &amp; Decrypt Vault
+        </button>
+      </form>
+    </div>
+
+    <!-- UNLOCKED ADMIN DASHBOARD -->
+    <div id="vault-dashboard" class="hidden space-y-6">
+      <!-- Top Metrics & Actions Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono">
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-3.5">
+          <div class="text-[11px] uppercase text-ink-mutedLight dark:text-ink-mutedDark">Total Records</div>
+          <div id="stat-total" class="font-display text-2xl font-bold mt-0.5">0</div>
+        </div>
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-3.5">
+          <div class="text-[11px] uppercase text-ink-mutedLight dark:text-ink-mutedDark">Unread</div>
+          <div id="stat-unread" class="font-display text-2xl font-bold mt-0.5">0</div>
+        </div>
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-3.5">
+          <div class="text-[11px] uppercase text-ink-mutedLight dark:text-ink-mutedDark">Starred</div>
+          <div id="stat-starred" class="font-display text-2xl font-bold mt-0.5">0</div>
+        </div>
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-3.5">
+          <div class="text-[11px] uppercase text-ink-mutedLight dark:text-ink-mutedDark">Storage Driver</div>
+          <div id="stat-driver" class="text-xs font-bold uppercase mt-2">Local Encrypted JSON</div>
+        </div>
+      </div>
+
+      <!-- Vault Sub-Tabs -->
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-rule-light dark:border-rule-dark pb-3 font-mono text-xs">
+        <div class="flex gap-2">
+          <button id="tab-inbox-btn" type="button" class="bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark px-3 py-1.5 uppercase tracking-wider font-bold">
+            Decrypted Inbox
+          </button>
+          <button id="tab-mongo-btn" type="button" class="border border-rule-light dark:border-rule-dark px-3 py-1.5 uppercase tracking-wider hover:border-ink-light dark:hover:border-ink-dark">
+            MongoDB Atlas Connector
+          </button>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <button id="seed-sample-btn" type="button" class="border border-rule-light dark:border-rule-dark px-2.5 py-1.5 hover:border-ink-light dark:hover:border-ink-dark">
+            + Seed Sample
+          </button>
+          <button id="export-enc-btn" type="button" class="border border-rule-light dark:border-rule-dark px-2.5 py-1.5 hover:border-ink-light dark:hover:border-ink-dark">
+            Export .enc.json
+          </button>
+          <label class="border border-rule-light dark:border-rule-dark px-2.5 py-1.5 hover:border-ink-light dark:hover:border-ink-dark cursor-pointer">
+            Import .json
+            <input type="file" id="import-enc-input" accept=".json" class="hidden" />
+          </label>
+          <button id="lock-vault-btn" type="button" class="bg-red-800 text-white px-3 py-1.5 uppercase tracking-wider font-bold hover:opacity-90">
+            Lock Vault
+          </button>
+        </div>
+      </div>
+
+      <!-- PANEL A: INBOX LIST -->
+      <div id="panel-inbox" class="space-y-4">
+        <div class="flex flex-col sm:flex-row gap-3 justify-between font-mono text-xs">
+          <div class="flex flex-wrap gap-1.5">
+            <button type="button" data-vfilter="all" class="vfilter-btn bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark px-2.5 py-1">All Active</button>
+            <button type="button" data-vfilter="unread" class="vfilter-btn border border-rule-light dark:border-rule-dark px-2.5 py-1">Unread</button>
+            <button type="button" data-vfilter="starred" class="vfilter-btn border border-rule-light dark:border-rule-dark px-2.5 py-1">Starred</button>
+            <button type="button" data-vfilter="archived" class="vfilter-btn border border-rule-light dark:border-rule-dark px-2.5 py-1">Archived</button>
+          </div>
+          <input type="search" id="vault-search" placeholder="Search sender, subject, or content..." class="bg-paper-cardLight dark:bg-paper-cardDark border border-rule-light dark:border-rule-dark px-3 py-1.5 sm:w-72 focus:outline-none" />
+        </div>
+
+        <div id="vault-messages-container" class="space-y-4"></div>
+      </div>
+
+      <!-- PANEL B: MONGODB CONNECTION & SCHEMA CONFIG -->
+      <div id="panel-mongo" class="hidden space-y-6">
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-6 space-y-4">
+          <h3 class="font-display text-xl font-bold">MongoDB Atlas REST Adapter Configuration</h3>
+          <p class="text-sm text-ink-mutedLight dark:text-ink-mutedDark">
+            Your portfolio and vault route all reads and writes through the unified <code>MessageStore</code> adapter. Switch to <strong>MongoDB REST API</strong> once your Node/Express or Atlas Data API endpoint is deployed—ciphertexts remain encrypted end-to-end inside MongoDB documents.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
+            <div>
+              <label for="mongo-driver-select" class="block uppercase mb-1">Active Driver</label>
+              <select id="mongo-driver-select" class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2">
+                <option value="local_json">Local Encrypted JSON (Browser)</option>
+                <option value="mongodb_api">MongoDB Atlas REST API</option>
+              </select>
+            </div>
+            <div>
+              <label for="mongo-endpoint-input" class="block uppercase mb-1">API Base Endpoint URL</label>
+              <input type="url" id="mongo-endpoint-input" placeholder="https://api.yourdomain.com/api/messages" class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2" />
+            </div>
+            <div>
+              <label for="mongo-token-input" class="block uppercase mb-1">Bearer Auth Token</label>
+              <input type="password" id="mongo-token-input" placeholder="Bearer eyJhbGciOi..." class="w-full bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark px-3 py-2" />
+            </div>
+          </div>
+
+          <div class="flex gap-3 font-mono text-xs">
+            <button id="save-mongo-cfg-btn" type="button" class="bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark px-4 py-2 uppercase font-bold">
+              Save Adapter Settings
+            </button>
+          </div>
+        </div>
+
+        <div class="border border-rule-light dark:border-rule-dark bg-paper-cardLight dark:bg-paper-cardDark p-6">
+          <div class="flex justify-between items-center mb-3">
+            <h4 class="font-mono text-xs uppercase font-bold">Ready-to-Deploy Mongoose Schema &amp; Express Route</h4>
+            <button id="copy-schema-btn" type="button" class="font-mono text-xs underline">Copy Snippet</button>
+          </div>
+          <pre id="mongo-schema-code" class="bg-paper-light dark:bg-paper-dark border border-rule-light dark:border-rule-dark p-4 font-mono text-xs overflow-x-auto leading-relaxed">// models/EncryptedMessage.js
+const mongoose = require('mongoose');
+
+const EncryptedMessageSchema = new mongoose.Schema({
+  id:         { type: String, required: true, unique: true },
+  salt:       { type: String, required: true }, // Base64 PBKDF2 salt
+  iv:         { type: String, required: true }, // Base64 AES-GCM IV
+  ciphertext: { type: String, required: true }, // Base64 AES-256-GCM payload
+  read:       { type: Boolean, default: false },
+  starred:    { type: Boolean, default: false },
+  archived:   { type: Boolean, default: false },
+  createdAt:  { type: Date, default: Date.now }
+});
+
+module.exports = mongoose.model('EncryptedMessage', EncryptedMessageSchema);</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY ARCHITECTURE & SQL MODAL -->
+  <div id="project-modal" class="no-print hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="max-w-2xl w-full border-2 border-ink-light dark:border-ink-dark bg-paper-light dark:bg-paper-dark p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="flex justify-between items-start gap-4 border-b border-rule-light dark:border-rule-dark pb-4 mb-4">
+        <div>
+          <span id="modal-tag" class="font-mono text-xs uppercase tracking-widest text-ink-mutedLight dark:text-ink-mutedDark"></span>
+          <h3 id="modal-title" class="font-display text-2xl font-bold mt-1"></h3>
+        </div>
+        <button id="close-modal-btn" type="button" class="font-mono text-xs uppercase border border-ink-light dark:border-ink-dark px-2.5 py-1 hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark">
+          Close [ESC]
+        </button>
+      </div>
+
+      <div class="space-y-4 text-sm leading-relaxed">
+        <div>
+          <h4 class="font-mono text-xs uppercase font-bold text-ink-mutedLight dark:text-ink-mutedDark mb-1">Business Challenge</h4>
+          <p id="modal-problem"></p>
+        </div>
+        <div>
+          <h4 class="font-mono text-xs uppercase font-bold text-ink-mutedLight dark:text-ink-mutedDark mb-1">Architectural Solution</h4>
+          <p id="modal-solution"></p>
+        </div>
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <h4 class="font-mono text-xs uppercase font-bold text-ink-mutedLight dark:text-ink-mutedDark">Sanitized Query / Formula Artifact</h4>
+            <button id="copy-code-btn" type="button" class="font-mono text-xs underline">Copy Code</button>
+          </div>
+          <pre id="modal-code" class="bg-paper-cardLight dark:bg-paper-cardDark border border-rule-light dark:border-rule-dark p-3.5 font-mono text-xs overflow-x-auto"></pre>
+          <div class="mt-2 flex flex-wrap items-center gap-3 font-mono text-xs">
+            <button id="run-sample-btn" type="button" class="border border-ink-light dark:border-ink-dark px-3 py-1.5 uppercase tracking-wider hover:bg-ink-light hover:text-paper-light dark:hover:bg-ink-dark dark:hover:text-paper-dark">&#9654; Run on sample data</button>
+            <span class="text-ink-mutedLight dark:text-ink-mutedDark">Dummy data. Use &larr; &rarr; keys to switch projects.</span>
+          </div>
+          <div id="modal-sample" class="hidden mt-3 overflow-x-auto"></div>
+        </div>
+        <div class="border-t border-rule-light dark:border-rule-dark pt-3 flex justify-between items-center font-mono text-xs">
+          <span>Verified Impact: <strong id="modal-impact"></strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="no-print fixed bottom-5 right-5 z-50 hidden bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark font-mono text-xs px-4 py-3 border border-rule-light dark:border-rule-dark shadow-lg"></div>
+
+  <script>
+    // =========================================================================
+    // 1. CONFIGURATION & CRYPTO UTILITIES (AES-256-GCM + PBKDF2 + SHA-256 GATE)
+    // =========================================================================
+    const VAULT_ADMIN_ID_HASH = "2eeae85260402abdc9e193dfbf3e8e76229cc8f14023196a2d6a1d947a07f602";
+    const VAULT_PASSPHRASE_HASH = "b6d04c20b159ab30cee9ca3673ae877bc047bbfb0e2fb01fda7f30ef5b48113a";
+    // Public encryption key derived from the passphrase hash so visitors can encrypt dispatches
+    // without exposing the plaintext vault login passphrase in source code.
+    const PUBLIC_ENCRYPTION_SECRET = VAULT_PASSPHRASE_HASH;
+    const STORAGE_KEY = "ky_encrypted_messages_v1";
+    const MONGO_CFG_KEY = "ky_mongo_adapter_cfg_v1";
+    const SESSION_UNLOCK_KEY = "ky_vault_unlocked_hash";
+
+    async function sha256Hex(str) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById("toast");
+      el.textContent = msg;
+      el.classList.remove("hidden");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => el.classList.add("hidden"), 3200);
+    }
+
+    // Safe clipboard copy compatible with sandboxed iFrames
+    function copyTextSafe(text, successMsg) {
+      const helper = document.createElement("textarea");
+      helper.value = text;
+      helper.style.position = "fixed";
+      helper.style.opacity = "0";
+      document.body.appendChild(helper);
+      helper.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMsg);
+      } catch (err) {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(() => showToast(successMsg));
+        }
+      }
+      document.body.removeChild(helper);
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, m => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[m]));
+    }
+
+    function bufToB64(buf) {
+      return btoa(String.fromCharCode(...new Uint8Array(buf)));
+    }
+
+    function b64ToBuf(b64) {
+      return Uint8Array.from(atob(b64), c => c.charCodeAt(0));
+    }
+
+    async function deriveAesKey(passphrase, salt) {
+      const enc = new TextEncoder();
+      const baseKey = await crypto.subtle.importKey(
+        "raw", enc.encode(passphrase), { name: "PBKDF2" }, false, ["deriveKey"]
+      );
+      return crypto.subtle.deriveKey(
+        { name: "PBKDF2", salt, iterations: 100000, hash: "SHA-256" },
+        baseKey,
+        { name: "AES-GCM", length: 256 },
+        false,
+        ["encrypt", "decrypt"]
+      );
+    }
+
+    async function encryptPayload(payloadObj, passphrase = PUBLIC_ENCRYPTION_SECRET) {
+      const salt = crypto.getRandomValues(new Uint8Array(16));
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+      const key = await deriveAesKey(passphrase, salt);
+      const encoded = new TextEncoder().encode(JSON.stringify(payloadObj));
+      const cipherBuf = await crypto.subtle.encrypt({ name: "AES-GCM", iv }, key, encoded);
+
+      return {
+        id: "msg_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7),
+        salt: bufToB64(salt),
+        iv: bufToB64(iv),
+        ciphertext: bufToB64(cipherBuf),
+        read: false,
+        starred: false,
+        archived: false,
+        createdAt: new Date().toISOString()
+      };
+    }
+
+    async function decryptPayload(record, passphrase) {
+      const salt = b64ToBuf(record.salt);
+      const iv = b64ToBuf(record.iv);
+      const cipher = b64ToBuf(record.ciphertext);
+      const key = await deriveAesKey(passphrase, salt);
+      const plainBuf = await crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, cipher);
+      return JSON.parse(new TextDecoder().decode(plainBuf));
+    }
+
+    // =========================================================================
+    // 2. UNIFIED MESSAGE STORE ADAPTER (LOCAL ENCRYPTED JSON <-> MONGODB REST)
+    // =========================================================================
+    const MessageStore = {
+      getConfig() {
+        return JSON.parse(localStorage.getItem(MONGO_CFG_KEY) || '{"driver":"local_json","endpoint":"","token":""}');
+      },
+      saveConfig(cfg) {
+        localStorage.setItem(MONGO_CFG_KEY, JSON.stringify(cfg));
+      },
+      async getAll() {
+        const cfg = this.getConfig();
+        if (cfg.driver === "mongodb_api" && cfg.endpoint) {
+          const res = await fetch(cfg.endpoint, {
+            headers: cfg.token ? { Authorization: `Bearer ${cfg.token}` } : {}
+          });
+          if (!res.ok) throw new Error("MongoDB API fetch failed (" + res.status + ")");
+          return await res.json();
+        }
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+      },
+      async add(record) {
+        const cfg = this.getConfig();
+        if (cfg.driver === "mongodb_api" && cfg.endpoint) {
+          const res = await fetch(cfg.endpoint, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              ...(cfg.token ? { Authorization: `Bearer ${cfg.token}` } : {})
+            },
+            body: JSON.stringify(record)
+          });
+          if (!res.ok) throw new Error("MongoDB API write failed (" + res.status + ")");
+          return;
+        }
+        const list = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        list.push(record);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      },
+      async updateMeta(id, patch) {
+        const cfg = this.getConfig();
+        if (cfg.driver === "mongodb_api" && cfg.endpoint) {
+          await fetch(`${cfg.endpoint}/${encodeURIComponent(id)}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+              ...(cfg.token ? { Authorization: `Bearer ${cfg.token}` } : {})
+            },
+            body: JSON.stringify(patch)
+          });
+          return;
+        }
+        const list = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        const idx = list.findIndex(item => item.id === id);
+        if (idx !== -1) {
+          list[idx] = { ...list[idx], ...patch };
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+        }
+      },
+      async remove(id) {
+        const cfg = this.getConfig();
+        if (cfg.driver === "mongodb_api" && cfg.endpoint) {
+          await fetch(`${cfg.endpoint}/${encodeURIComponent(id)}`, {
+            method: "DELETE",
+            headers: cfg.token ? { Authorization: `Bearer ${cfg.token}` } : {}
+          });
+          return;
+        }
+        const list = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]").filter(item => item.id !== id);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      }
+    };
+
+    // =========================================================================
+    // 3. THEME & VIEW ROUTING (PORTFOLIO <-> ADMIN VAULT)
+    // =========================================================================
+    const htmlEl = document.documentElement;
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const themeLabel = document.getElementById("theme-label");
+    const themeIcon = document.getElementById("theme-icon");
+
+    const MOON_SVG = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+    const SUN_SVG = '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
+
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        htmlEl.classList.add("dark");
+        themeLabel.textContent = "Morning Edition";
+        themeToggleBtn.title = "Morning Edition";
+        themeToggleBtn.setAttribute("aria-label", "Switch to Morning Edition");
+        themeIcon.innerHTML = SUN_SVG;
+      } else {
+        htmlEl.classList.remove("dark");
+        themeLabel.textContent = "Evening Edition";
+        themeToggleBtn.title = "Evening Edition";
+        themeToggleBtn.setAttribute("aria-label", "Switch to Evening Edition");
+        themeIcon.innerHTML = MOON_SVG;
+      }
+      localStorage.setItem("ky_editorial_theme", theme);
+    }
+
+    applyTheme(localStorage.getItem("ky_editorial_theme") || "light");
+
+    themeToggleBtn.addEventListener("click", () => {
+      applyTheme(htmlEl.classList.contains("dark") ? "light" : "dark");
+    });
+
+    const portfolioApp = document.getElementById("portfolio-app");
+    const adminApp = document.getElementById("admin-app");
+    const toggleViewBtn = document.getElementById("toggle-view-btn");
+    const toggleViewLabel = document.getElementById("toggle-view-label");
+    const vaultIcon = document.getElementById("vault-icon");
+
+    const LOCK_SVG = '<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>';
+    const PORTFOLIO_SVG = '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line>';
+
+    function switchView(view) {
+      if (view === "admin") {
+        portfolioApp.classList.add("hidden");
+        adminApp.classList.remove("hidden");
+        toggleViewLabel.textContent = "Portfolio View";
+        toggleViewBtn.title = "Portfolio View";
+        toggleViewBtn.setAttribute("aria-label", "Switch to Portfolio View");
+        vaultIcon.innerHTML = PORTFOLIO_SVG;
+        window.location.hash = "admin";
+        checkExistingSession();
+      } else {
+        adminApp.classList.add("hidden");
+        portfolioApp.classList.remove("hidden");
+        toggleViewLabel.textContent = "Admin Vault";
+        toggleViewBtn.title = "Admin Vault";
+        toggleViewBtn.setAttribute("aria-label", "Open Admin Vault");
+        vaultIcon.innerHTML = LOCK_SVG;
+        if (window.location.hash === "#admin") {
+          history.replaceState(null, "", window.location.pathname);
+        }
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    toggleViewBtn.addEventListener("click", () => {
+      const isCurrentlyAdmin = !adminApp.classList.contains("hidden");
+      switchView(isCurrentlyAdmin ? "portfolio" : "admin");
+    });
+
+    document.getElementById("back-to-portfolio-btn").addEventListener("click", () => {
+      switchView("portfolio");
+    });
+
+    if (window.location.hash === "#admin") {
+      switchView("admin");
+    }
+
+    // =========================================================================
+    // 4. CASE STUDY FILTERING & MODAL ARTIFACTS
+    // =========================================================================
+    const caseStudies = [
+      {
+        tag: "Enterprise ICM // Xactly & SAP Commissions",
+        title: "Multi-Tier Sales Quota & Accelerator Engine",
+        problem: "Manual spreadsheet overrides across 1,400+ global sales territories caused 12-day payout delays and recurring credit-split disputes at quarter close.",
+        solution: "Engineered deterministic attainment tier tables, split-credit rules, and automated clawback ledgers in Xactly Incent backed by pre-payout SQL validation views.",
+        code: `-- Accelerator Tier Attainment & Payout Calculation
+SELECT
+  rep_id,
+  territory_code,
+  ROUND((actual_bookings / NULLIF(quota_target, 0)) * 100, 2) AS attainment_pct,
+  CASE
+    WHEN actual_bookings / NULLIF(quota_target, 0) >= 1.20 THEN base_commission * 1.50
+    WHEN actual_bookings / NULLIF(quota_target, 0) >= 1.00 THEN base_commission * 1.25
+    ELSE base_commission
+  END AS final_payout
+FROM icm_quarterly_summary
+WHERE payout_status = 'VALIDATED';`,
+        impact: "-65% cycle turnaround time & zero payout disputes"
+      },
+      {
+        tag: "Workforce Analytics // Power BI & DAX",
+        title: "Compa-Ratio & Pay-Equity Executive Suite",
+        problem: "HR business partners lacked real-time visibility into salary band penetration and gender/grade pay-equity variance during annual merit allocation.",
+        solution: "Connected SAP SuccessFactors compensation extracts to an interactive Power BI semantic model with dynamic compa-ratio banding and merit pool simulation measures.",
+        code: `// DAX Compa-Ratio & Band Penetration Measure
+Compa Ratio = 
+DIVIDE(
+    AVERAGE(EmployeeComp[AnnualBaseSalary]),
+    AVERAGE(PayGrades[BandMidpoint]),
+    0
+)
+
+OutOfBand Flag = 
+IF([Compa Ratio] < 0.80 || [Compa Ratio] > 1.20, "Review Required", "Within Band")`,
+        impact: "Adopted across 18 business units for annual merit governance"
+      },
+      {
+        tag: "Audit Automation // SQL & IBM Cognos",
+        title: "Pre-Payroll Variance & Anomaly Sentinel",
+        problem: "Late-stage manual spot checks struggled to catch duplicate allowances, pro-rata leave deductions, and unapproved off-cycle adjustments before payroll lock.",
+        solution: "Deployed automated SQL window-function audit rules scheduled via IBM Cognos to quarantine anomalies 48 hours prior to payroll cutoff.",
+        code: `-- Pre-Payroll Variance & Duplicate Allowance Audit
+WITH PayrollDiff AS (
+  SELECT
+    emp_id,
+    pay_component,
+    amount,
+    LAG(amount) OVER (PARTITION BY emp_id, pay_component ORDER BY pay_period) AS prev_amount
+  FROM staging_payroll_feed
+)
+SELECT emp_id, pay_component, amount, prev_amount
+FROM PayrollDiff
+WHERE ABS(amount - COALESCE(prev_amount, amount)) / NULLIF(prev_amount, 0) > 0.15;`,
+        impact: "99.9% payroll audit accuracy across consecutive cycles"
+      }
+    ];
+
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => {
+          b.classList.remove("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark");
+          b.classList.add("border-rule-light", "dark:border-rule-dark");
+        });
+        btn.classList.add("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark");
+        const filter = btn.dataset.filter;
+        document.querySelectorAll(".project-card").forEach(card => {
+          card.style.display = (filter === "all" || card.dataset.category === filter) ? "flex" : "none";
+        });
+      });
+    });
+
+    const modalEl = document.getElementById("project-modal");
+    document.querySelectorAll(".open-modal-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = caseStudies[Number(btn.dataset.project)];
+        document.getElementById("modal-tag").textContent = item.tag;
+        document.getElementById("modal-title").textContent = item.title;
+        document.getElementById("modal-problem").textContent = item.problem;
+        document.getElementById("modal-solution").textContent = item.solution;
+        document.getElementById("modal-code").textContent = item.code;
+        document.getElementById("modal-impact").textContent = item.impact;
+        modalEl.classList.remove("hidden");
+      });
+    });
+
+    document.getElementById("close-modal-btn").addEventListener("click", () => modalEl.classList.add("hidden"));
+    modalEl.addEventListener("click", e => { if (e.target === modalEl) modalEl.classList.add("hidden"); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") modalEl.classList.add("hidden"); });
+
+    document.getElementById("copy-code-btn").addEventListener("click", () => {
+      copyTextSafe(document.getElementById("modal-code").textContent, "Sanitized SQL/DAX artifact copied to clipboard.");
+    });
+
+    // =========================================================================
+    // 5. MERIT MATRIX & VARIABLE BONUS SIMULATOR
+    // =========================================================================
+    const simSalary = document.getElementById("sim-salary");
+    const simCompa = document.getElementById("sim-compa");
+    const simRating = document.getElementById("sim-rating");
+    const simPool = document.getElementById("sim-pool");
+
+    function updateSimulator() {
+      const salary = Number(simSalary.value);
+      const compa = Number(simCompa.value);
+      const rating = Number(simRating.value);
+      const pool = Number(simPool.value);
+
+      const ratingLabels = { 1: "1 — Needs Improvement", 2: "2 — Developing", 3: "3 — Meets Expectations", 4: "4 — Exceeds", 5: "5 — Outstanding" };
+      const perfMult = { 1: 0, 2: 0.5, 3: 1.0, 4: 1.3, 5: 1.6 }[rating];
+      const compaMult = compa < 0.95 ? 1.15 : compa > 1.10 ? 0.75 : 1.0;
+
+      const meritPct = Number((pool * perfMult * compaMult).toFixed(2));
+      const meritAmt = Math.round(salary * (meritPct / 100));
+      const bonusPct = { 1: 0, 2: 4, 3: 8, 4: 12, 5: 18 }[rating];
+      const bonusAmt = Math.round(salary * (bonusPct / 100));
+      const totalCash = salary + meritAmt + bonusAmt;
+
+      document.getElementById("sim-salary-val").textContent = "₹" + salary.toLocaleString("en-IN");
+      document.getElementById("sim-compa-val").textContent = `${compa.toFixed(2)} (${compa < 0.95 ? "Below Midpoint" : compa > 1.10 ? "Upper Quartile" : "At Midpoint"})`;
+      document.getElementById("sim-rating-val").textContent = ratingLabels[rating];
+      document.getElementById("sim-pool-val").textContent = pool.toFixed(1) + "%";
+
+      document.getElementById("out-merit-pct").textContent = meritPct.toFixed(2) + "%";
+      document.getElementById("out-merit-amt").textContent = "₹" + meritAmt.toLocaleString("en-IN");
+      document.getElementById("out-bonus-amt").textContent = "₹" + bonusAmt.toLocaleString("en-IN");
+      document.getElementById("out-total-cash").textContent = "₹" + totalCash.toLocaleString("en-IN");
+
+      const ruleNote = document.getElementById("out-governance-note");
+      if (rating <= 1) {
+        ruleNote.textContent = "Governance Rule: Rating 1 freezes base merit increment; employee placed on structured performance calibration.";
+      } else if (compa > 1.10) {
+        ruleNote.textContent = "Governance Rule: Upper-quartile compa-ratio (> 1.10) applies a 0.75x merit damper to preserve pay-band equity.";
+      } else if (compa < 0.95 && rating >= 4) {
+        ruleNote.textContent = "Governance Rule: High performer below midpoint (CR < 0.95) receives a 1.15x band-progression accelerator.";
+      } else {
+        ruleNote.textContent = "Governance Rule: Standard matrix multiplier applied within calibrated department merit budget pool.";
+      }
+    }
+
+    [simSalary, simCompa, simRating, simPool].forEach(el => el.addEventListener("input", updateSimulator));
+    updateSimulator();
+
+    // =========================================================================
+    // 6. CONTACT FORM -> AES-256-GCM ENCRYPTION & STORAGE
+    // =========================================================================
+    document.getElementById("copy-email-btn").addEventListener("click", () => {
+      copyTextSafe("krrnnvvrr@gmail.com", "Copied krrnnvvrr@gmail.com");
+    });
+
+    document.getElementById("copy-phone-btn").addEventListener("click", () => {
+      copyTextSafe("+91 99363 58988", "Copied +91 99363 58988");
+    });
+
+    document.getElementById("contact-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const payload = {
+        name: document.getElementById("sender-name").value.trim(),
+        email: document.getElementById("sender-email").value.trim(),
+        subject: document.getElementById("sender-subject").value.trim(),
+        message: document.getElementById("sender-message").value.trim(),
+        timestamp: new Date().toISOString()
+      };
+
+      try {
+        const encryptedRecord = await encryptPayload(payload);
+        await MessageStore.add(encryptedRecord);
+        e.target.reset();
+        showToast("Dispatch encrypted (AES-256-GCM) & saved to Admin Vault.");
+      } catch (err) {
+        showToast("Encryption/Storage error: " + err.message);
+      }
+    });
+
+    // =========================================================================
+    // 7. ADMIN VAULT AUTHENTICATION, DECRYPTION & DASHBOARD CONTROLS
+    // =========================================================================
+    let unlockedPassphrase = "";
+    let currentVaultFilter = "all";
+
+    function checkExistingSession() {
+      const savedHash = sessionStorage.getItem(SESSION_UNLOCK_KEY);
+      if (savedHash === VAULT_PASSPHRASE_HASH) {
+        unlockedPassphrase = savedHash;
+        document.getElementById("vault-login-gate").classList.add("hidden");
+        document.getElementById("vault-dashboard").classList.remove("hidden");
+        loadMongoConfigUI();
+        renderVaultDashboard();
+      }
+    }
+
+    document.getElementById("vault-login-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const id = document.getElementById("vault-id-input").value.trim();
+      const pass = document.getElementById("vault-pass-input").value;
+      const errEl = document.getElementById("vault-login-error");
+      errEl.classList.add("hidden");
+
+      const [idHash, passHash] = await Promise.all([sha256Hex(id), sha256Hex(pass)]);
+
+      if (idHash !== VAULT_ADMIN_ID_HASH || passHash !== VAULT_PASSPHRASE_HASH) {
+        errEl.textContent = "Access Denied: Invalid Admin ID or Decryption Passphrase.";
+        errEl.classList.remove("hidden");
+        return;
+      }
+
+      unlockedPassphrase = passHash;
+      sessionStorage.setItem(SESSION_UNLOCK_KEY, passHash);
+      document.getElementById("vault-login-gate").classList.add("hidden");
+      document.getElementById("vault-dashboard").classList.remove("hidden");
+      loadMongoConfigUI();
+      await renderVaultDashboard();
+      showToast("Vault unlocked & 256-bit AES key derived.");
+    });
+
+    document.getElementById("lock-vault-btn").addEventListener("click", () => {
+      unlockedPassphrase = "";
+      sessionStorage.removeItem(SESSION_UNLOCK_KEY);
+      document.getElementById("vault-pass-input").value = "";
+      document.getElementById("vault-dashboard").classList.add("hidden");
+      document.getElementById("vault-login-gate").classList.remove("hidden");
+      showToast("Admin Vault locked.");
+    });
+
+    async function renderVaultDashboard() {
+      if (!unlockedPassphrase) return;
+      const container = document.getElementById("vault-messages-container");
+      const query = document.getElementById("vault-search").value.trim().toLowerCase();
+
+      let records = [];
+      try {
+        records = await MessageStore.getAll();
+      } catch (err) {
+        container.innerHTML = `<div class="border border-red-700 p-4 font-mono text-xs text-red-700">${escapeHtml(err.message)}</div>`;
+        return;
+      }
+
+      const decryptedItems = [];
+      for (const rec of records) {
+        try {
+          const data = await decryptPayload(rec, unlockedPassphrase);
+          decryptedItems.push({ ...rec, data });
+        } catch (err) {
+          // Skip records encrypted with a different passphrase
+        }
+      }
+
+      document.getElementById("stat-total").textContent = decryptedItems.length;
+      document.getElementById("stat-unread").textContent = decryptedItems.filter(i => !i.read && !i.archived).length;
+      document.getElementById("stat-starred").textContent = decryptedItems.filter(i => i.starred).length;
+      const cfg = MessageStore.getConfig();
+      document.getElementById("stat-driver").textContent = cfg.driver === "mongodb_api" ? "MongoDB Atlas API" : "Local Encrypted JSON";
+
+      const filtered = decryptedItems
+        .slice()
+        .reverse()
+        .filter(item => {
+          if (currentVaultFilter === "unread" && (item.read || item.archived)) return false;
+          if (currentVaultFilter === "starred" && !item.starred) return false;
+          if (currentVaultFilter === "archived" && !item.archived) return false;
+          if (currentVaultFilter === "all" && item.archived) return false;
+          if (query) {
+            const hay = `${item.data.name} ${item.data.email} ${item.data.subject} ${item.data.message}`.toLowerCase();
+            if (!hay.includes(query)) return false;
+          }
+          return true;
+        });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="border border-dashed border-rule-light dark:border-rule-dark p-8 text-center font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark">No decrypted correspondence matches the current filter.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => `
+        <article class="border ${item.read ? "border-rule-light dark:border-rule-dark" : "border-2 border-ink-light dark:border-ink-dark"} bg-paper-cardLight dark:bg-paper-cardDark p-5">
+          <div class="flex flex-wrap justify-between items-start gap-2 border-b border-rule-light dark:border-rule-dark pb-3 mb-3">
+            <div>
+              <div class="flex items-center gap-2">
+                ${!item.read ? `<span class="bg-ink-light text-paper-light dark:bg-ink-dark dark:text-paper-dark font-mono text-[10px] uppercase px-1.5 py-0.5">Unread</span>` : ""}
+                <h3 class="font-display text-lg font-bold">${escapeHtml(item.data.subject || "Portfolio Inquiry")}</h3>
+              </div>
+              <div class="font-mono text-xs text-ink-mutedLight dark:text-ink-mutedDark mt-1">
+                From: <strong class="text-ink-light dark:text-ink-dark">${escapeHtml(item.data.name)}</strong> &lt;${escapeHtml(item.data.email)}&gt;
+              </div>
+            </div>
+            <span class="font-mono text-[11px] text-ink-mutedLight dark:text-ink-mutedDark">
+              ${new Date(item.createdAt || item.data.timestamp).toLocaleString()}
+            </span>
+          </div>
+
+          <p class="text-[15px] leading-relaxed whitespace-pre-wrap mb-4">${escapeHtml(item.data.message)}</p>
+
+          <div class="flex flex-wrap gap-2 font-mono text-[11px] uppercase">
+            <button type="button" data-action="read" data-id="${item.id}" data-val="${!item.read}" class="vault-action border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark">
+              ${item.read ? "Mark Unread" : "Mark Read"}
+            </button>
+            <button type="button" data-action="star" data-id="${item.id}" data-val="${!item.starred}" class="vault-action border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark">
+              ${item.starred ? "★ Starred" : "☆ Star"}
+            </button>
+            <button type="button" data-action="archive" data-id="${item.id}" data-val="${!item.archived}" class="vault-action border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark">
+              ${item.archived ? "Unarchive" : "Archive"}
+            </button>
+            <button type="button" data-action="copy" data-email="${escapeHtml(item.data.email)}" class="vault-action border border-rule-light dark:border-rule-dark px-2.5 py-1 hover:border-ink-light dark:hover:border-ink-dark">
+              Copy Email
+            </button>
+            <button type="button" data-action="delete" data-id="${item.id}" class="vault-action border border-red-800 text-red-800 dark:text-red-400 px-2.5 py-1 ml-auto hover:bg-red-800 hover:text-white">
+              Delete
+            </button>
+          </div>
+        </article>
+      `).join("");
+
+      document.querySelectorAll(".vault-action").forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const action = btn.dataset.action;
+          const id = btn.dataset.id;
+          if (action === "copy") {
+            copyTextSafe(btn.dataset.email, "Sender email copied.");
+            return;
+          }
+          if (action === "delete") {
+            await MessageStore.remove(id);
+            showToast("Encrypted record deleted.");
+          } else if (action === "read") {
+            await MessageStore.updateMeta(id, { read: btn.dataset.val === "true" });
+          } else if (action === "star") {
+            await MessageStore.updateMeta(id, { starred: btn.dataset.val === "true" });
+          } else if (action === "archive") {
+            await MessageStore.updateMeta(id, { archived: btn.dataset.val === "true" });
+          }
+          await renderVaultDashboard();
+        });
+      });
+    }
+
+    document.querySelectorAll(".vfilter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".vfilter-btn").forEach(b => {
+          b.classList.remove("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark");
+          b.classList.add("border", "border-rule-light", "dark:border-rule-dark");
+        });
+        btn.classList.add("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark");
+        currentVaultFilter = btn.dataset.vfilter;
+        renderVaultDashboard();
+      });
+    });
+
+    document.getElementById("vault-search").addEventListener("input", renderVaultDashboard);
+
+    // Seed Sample Encrypted Message
+    document.getElementById("seed-sample-btn").addEventListener("click", async () => {
+      const rec = await encryptPayload({
+        name: "John Miller",
+        email: "john.miller@enterprise.com",
+        subject: "Lead Compensation & ICM Architect Role",
+        message: "Hi Karanveer, your Xactly ICM and SQL pre-payroll audit work stood out. Are you available this week for a brief discussion regarding a Compensation Analytics Lead role?",
+        timestamp: new Date().toISOString()
+      });
+      await MessageStore.add(rec);
+      await renderVaultDashboard();
+      showToast("Sample AES-256-GCM encrypted message added.");
+    });
+
+    // Export & Import Encrypted JSON
+    document.getElementById("export-enc-btn").addEventListener("click", async () => {
+      const list = await MessageStore.getAll();
+      const blob = new Blob([JSON.stringify(list, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "messages.enc.json";
+      a.click();
+    });
+
+    document.getElementById("import-enc-input").addEventListener("change", async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      try {
+        const imported = JSON.parse(await file.text());
+        if (!Array.isArray(imported)) throw new Error("Expected JSON array.");
+        for (const item of imported) {
+          if (item.ciphertext && item.iv && item.salt) {
+            await MessageStore.add(item);
+          }
+        }
+        await renderVaultDashboard();
+        showToast("Encrypted JSON records imported.");
+      } catch (err) {
+        showToast("Import error: " + err.message);
+      }
+    });
+
+    // Vault Sub-Tabs (Decrypted Inbox vs MongoDB Atlas Connector)
+    const tabInboxBtn = document.getElementById("tab-inbox-btn");
+    const tabMongoBtn = document.getElementById("tab-mongo-btn");
+    const panelInbox = document.getElementById("panel-inbox");
+    const panelMongo = document.getElementById("panel-mongo");
+
+    tabInboxBtn.addEventListener("click", () => {
+      panelMongo.classList.add("hidden");
+      panelInbox.classList.remove("hidden");
+      tabInboxBtn.classList.add("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark", "font-bold");
+      tabMongoBtn.classList.remove("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark", "font-bold");
+    });
+
+    tabMongoBtn.addEventListener("click", () => {
+      panelInbox.classList.add("hidden");
+      panelMongo.classList.remove("hidden");
+      tabMongoBtn.classList.add("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark", "font-bold");
+      tabInboxBtn.classList.remove("bg-ink-light", "text-paper-light", "dark:bg-ink-dark", "dark:text-paper-dark", "font-bold");
+    });
+
+    function loadMongoConfigUI() {
+      const cfg = MessageStore.getConfig();
+      document.getElementById("mongo-driver-select").value = cfg.driver || "local_json";
+      document.getElementById("mongo-endpoint-input").value = cfg.endpoint || "";
+      document.getElementById("mongo-token-input").value = cfg.token || "";
+    }
+
+    document.getElementById("save-mongo-cfg-btn").addEventListener("click", async () => {
+      MessageStore.saveConfig({
+        driver: document.getElementById("mongo-driver-select").value,
+        endpoint: document.getElementById("mongo-endpoint-input").value.trim(),
+        token: document.getElementById("mongo-token-input").value.trim()
+      });
+      await renderVaultDashboard();
+      showToast("Storage adapter configuration saved.");
+    });
+
+    document.getElementById("copy-schema-btn").addEventListener("click", () => {
+      copyTextSafe(document.getElementById("mongo-schema-code").textContent, "Mongoose schema copied to clipboard.");
+    });
+  </script>
+
+  <script>
+    // =========================================================================
+    // INTERACTIVE LAYER (added): scroll effects, count-up, simulator visuals,
+    // sample query output, skill-to-project linking
+    // =========================================================================
+    (function () {
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // 1. Scroll progress + back-to-top
+      const bar = document.getElementById("scroll-progress");
+      const topBtn = document.getElementById("back-to-top");
+      function onScroll() {
+        const h = document.documentElement;
+        const max = h.scrollHeight - h.clientHeight;
+        bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+        topBtn.classList.toggle("hidden", h.scrollTop < 600);
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+      topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+      // 2. Reveal sections on scroll
+      const revealEls = document.querySelectorAll("#portfolio-app section, #portfolio-app footer");
+      if ("IntersectionObserver" in window && !reduce) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        revealEls.forEach(el => { el.classList.add("reveal"); io.observe(el); });
+      }
+
+      // 3. Active nav link
+      const navLinks = [...document.querySelectorAll('nav[aria-label="Primary Navigation"] a')];
+      if ("IntersectionObserver" in window) {
+        const navIO = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              navLinks.forEach(a => a.classList.toggle("nav-active", a.getAttribute("href") === "#" + e.target.id));
+            }
+          });
+        }, { rootMargin: "-40% 0px -55% 0px" });
+        navLinks.forEach(a => { const t = document.querySelector(a.getAttribute("href")); if (t) navIO.observe(t); });
+      }
+
+      // 4. Count-up numbers
+      document.querySelectorAll(".count-up").forEach(el => {
+        const original = el.textContent;
+        const nums = original.match(/-?\d+(\.\d+)?/g);
+        if (!nums || reduce) return;
+        const decimals = nums.map(n => (n.split(".")[1] || "").length);
+        const targets = nums.map(Number);
+        let started = false;
+        function run() {
+          if (started) return; started = true;
+          const t0 = performance.now(), dur = 1200;
+          (function frame(now) {
+            const p = Math.min((now - t0) / dur, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            let i = 0;
+            el.textContent = original.replace(/-?\d+(\.\d+)?/g, () => {
+              const v = targets[i] * ease; const d = decimals[i]; i++;
+              return v.toFixed(d);
+            });
+            if (p < 1) requestAnimationFrame(frame); else el.textContent = original;
+          })(t0);
+        }
+        new IntersectionObserver((en, ob) => { if (en[0].isIntersecting) { run(); ob.disconnect(); } }, { threshold: 0.6 }).observe(el);
+      });
+
+      // 5. Simulator visuals
+      const sS = document.getElementById("sim-salary"), sC = document.getElementById("sim-compa"),
+            sR = document.getElementById("sim-rating"), sP = document.getElementById("sim-pool");
+      const perfMult = { 1: 0, 2: 0.5, 3: 1.0, 4: 1.3, 5: 1.6 };
+      const bonusPct = { 1: 0, 2: 4, 3: 8, 4: 12, 5: 18 };
+      const barsWrap = document.getElementById("rating-bars");
+      const rbars = [1, 2, 3, 4, 5].map(r => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.setAttribute("aria-label", "Set rating " + r);
+        b.className = "flex-1 flex flex-col items-center justify-end h-full group";
+        b.innerHTML = '<span class="rval text-[9px] mb-0.5"></span><span class="rbar w-full bg-ink-light/30 dark:bg-ink-dark/30 group-hover:bg-amber-600/70" style="height:2px"></span><span class="text-[9px] mt-0.5">' + r + '</span>';
+        b.addEventListener("click", () => { sR.value = r; sR.dispatchEvent(new Event("input")); });
+        barsWrap.appendChild(b);
+        return b;
+      });
+      function updateViz() {
+        const salary = +sS.value, compa = +sC.value, rating = +sR.value, pool = +sP.value;
+        const compaMult = compa < 0.95 ? 1.15 : compa > 1.10 ? 0.75 : 1.0;
+        const pos = Math.min(Math.max((compa - 0.75) / 0.5, 0), 1) * 100;
+        document.getElementById("gauge-marker").style.left = "calc(" + pos + "% - 2px)";
+        document.getElementById("gauge-text").textContent = compa < 0.95 ? "Below midpoint" : compa > 1.10 ? "Upper quartile" : "Near midpoint";
+        const merit = salary * (pool * perfMult[rating] * compaMult) / 100;
+        const bonus = salary * bonusPct[rating] / 100;
+        const total = salary + merit + bonus;
+        document.getElementById("seg-base").style.width = (salary / total * 100) + "%";
+        document.getElementById("seg-merit").style.width = (merit / total * 100) + "%";
+        document.getElementById("seg-bonus").style.width = (bonus / total * 100) + "%";
+        rbars.forEach((b, i) => {
+          const r = i + 1, m = pool * perfMult[r] * compaMult;
+          b.querySelector(".rbar").style.height = Math.max(2, (m / 22) * 100 * 0.48) + "px";
+          b.querySelector(".rval").textContent = m.toFixed(1) + "%";
+          b.querySelector(".rbar").classList.toggle("!bg-amber-600", r === rating);
+        });
+      }
+      [sS, sC, sR, sP].forEach(el => el.addEventListener("input", updateViz));
+      updateViz();
+
+      document.querySelectorAll(".preset-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const p = JSON.parse(btn.dataset.preset);
+          sS.value = p.s; sC.value = p.c; sR.value = p.r; sP.value = p.p;
+          [sS, sC, sR, sP].forEach(el => el.dispatchEvent(new Event("input")));
+        });
+      });
+
+      // 6. Modal: sample output + arrow-key navigation
+      const samples = [
+        [{ rep_id: "R-101", territory: "NA-West", attainment_pct: "124.50", final_payout: "75,000" },
+         { rep_id: "R-102", territory: "EMEA-N", attainment_pct: "101.20", final_payout: "50,000" },
+         { rep_id: "R-103", territory: "APAC-S", attainment_pct: "87.90", final_payout: "40,000" }],
+        [{ grade: "G5", avg_salary: "11,50,000", midpoint: "12,50,000", compa_ratio: "0.92", flag: "Within Band" },
+         { grade: "G6", avg_salary: "19,00,000", midpoint: "17,00,000", compa_ratio: "1.12", flag: "Within Band" },
+         { grade: "G7", avg_salary: "13,20,000", midpoint: "18,00,000", compa_ratio: "0.73", flag: "Review Required" }],
+        [{ emp_id: "E-2210", pay_component: "Stipend", amount: "24,000", prev_amount: "12,000", change: "+100.0%" },
+         { emp_id: "E-3307", pay_component: "Allowance", amount: "9,800", prev_amount: "6,500", change: "+50.8%" },
+         { emp_id: "E-4120", pay_component: "Pro-rata adj.", amount: "18,400", prev_amount: "15,000", change: "+22.7%" }]
+      ];
+      let cur = 0;
+      const sampleBox = document.getElementById("modal-sample");
+      const runBtn = document.getElementById("run-sample-btn");
+      const modal = document.getElementById("project-modal");
+      document.querySelectorAll(".open-modal-btn").forEach(b => b.addEventListener("click", () => {
+        cur = Number(b.dataset.project);
+        sampleBox.classList.add("hidden"); sampleBox.innerHTML = "";
+        runBtn.innerHTML = "&#9654; Run on sample data";
+      }));
+      runBtn.addEventListener("click", () => {
+        runBtn.textContent = "Running...";
+        setTimeout(() => {
+          const rows = samples[cur];
+          const cols = Object.keys(rows[0]);
+          sampleBox.innerHTML =
+            '<table class="w-full font-mono text-xs border border-rule-light dark:border-rule-dark"><thead><tr>' +
+            cols.map(c => '<th class="text-left px-2 py-1.5 border-b border-rule-light dark:border-rule-dark uppercase text-[10px]">' + c + '</th>').join("") +
+            "</tr></thead><tbody>" +
+            rows.map(r => "<tr>" + cols.map(c => '<td class="px-2 py-1.5 border-b border-rule-light dark:border-rule-dark">' + r[c] + "</td>").join("") + "</tr>").join("") +
+            "</tbody></table>";
+          sampleBox.classList.remove("hidden");
+          runBtn.innerHTML = "&#8635; Run again";
+        }, reduce ? 0 : 600);
+      });
+      document.addEventListener("keydown", (e) => {
+        if (modal.classList.contains("hidden")) return;
+        const btns = document.querySelectorAll(".open-modal-btn");
+        if (e.key === "ArrowRight") btns[(cur + 1) % btns.length].click();
+        if (e.key === "ArrowLeft") btns[(cur - 1 + btns.length) % btns.length].click();
+      });
+
+      // 7. Skills -> matching case studies
+      const keys = ["sap", "callidus", "sql", "cognos", "excel", "salesforce", "audit", "commission"];
+      document.querySelectorAll("#skills li").forEach(li => {
+        li.classList.add("skill-chip");
+        li.title = "Click to find case studies that use this";
+        li.addEventListener("click", () => {
+          const text = li.textContent.toLowerCase();
+          const hits = keys.filter(k => text.includes(k));
+          const cards = [...document.querySelectorAll(".project-card")].filter(c => hits.some(k => c.textContent.toLowerCase().includes(k)));
+          document.querySelectorAll(".project-card").forEach(c => c.classList.remove("pulse"));
+          if (!cards.length) { showToast("No case study uses this yet."); return; }
+          document.querySelector('.filter-btn[data-filter="all"]').click();
+          cards.forEach(c => c.classList.add("pulse"));
+          document.getElementById("work").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+          showToast(cards.length + " case stud" + (cards.length > 1 ? "ies use" : "y uses") + " this.");
+          setTimeout(() => cards.forEach(c => c.classList.remove("pulse")), 3000);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
